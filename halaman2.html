@@ -1,0 +1,50 @@
+<!-- Halaman Form Penyewaan (form.html) -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Penyewaan</title>
+</head>
+<body>
+    <h3>Form Penyewaan</h3>
+    <form name="form_penyewaan" action="#" method="post">
+        <label for="nama">Nama Penyewa:</label>
+        <input type="text" name="nama" id="nama" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="nama_kegiatan">Nama Kegiatan:</label>
+        <input type="text" name="nama_kegiatan" id="nama_kegiatan" required>
+        <br>
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" name="telepon" id="telepon" required>
+        <br>
+        <label for="item">Pilih Item:</label>
+        <select name="item" id="item" required>
+            <option value="kostum_tradisional">Kostum Tari Tradisional</option>
+            <option value="kostum_modern">Kostum Modern Dance</option>
+            <option value="properti_tari">Properti Tari (Payung, Selendang, dll)</option>
+            <option value="kostum_gandrung">Sewa Kostum Tari Gandrung</option>
+            <option value="kipas_bajidor">Sewa Kipas Bajidor</option>
+            <option value="kain">Sewa Kain</option>
+            <option value="kipas_janger">Sewa Kipas Janger</option>
+            <option value="kostum_dance">Sewa Kostum Dance</option>
+            <option value="kostum_lorang">Sewa Kostum Lorang Modern Dance</option>
+            <option value="selendang_bali">Sewa Selendang Bali</option>
+        </select>        
+        <br>
+        <label for="tanggal">Tanggal Penyewaan:</label>
+        <input type="date" name="tanggal" id="tanggal" required>
+        <br>
+        <label for="durasi">Durasi Penyewaan (hari):</label>
+        <input type="number" name="durasi" id="durasi" min="1" required>
+        <br>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+        <br>
+        <a href="halaman1.html">Kembali ke Halaman Utama</a>
+    </form>
+</body>
+</html>
