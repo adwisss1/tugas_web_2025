@@ -5,60 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Penggunaan Talent</title>
+    <style>
+        body {
+            background-color: #ff0000; /* Background merah */
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        
+        form {
+            background-color: white;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+        
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .form-row {
+            margin-bottom: 10px;
+        }
+        
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        
+        input, select {
+            width: 250px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        textarea {
+            width: 250px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+        
+        .button-group {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            padding: 8px 15px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+        }
+        
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #ddd;
+        }
+        
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: blue;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h3>Form Penggunaan Talent</h3>
     <form name="form_talent" action="#" method="post">
-        <label for="nama_client">Nama Client:</label>
-        <input type="text" name="nama_client" id="nama_client" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
-        <br>
-        <label for="nama_kegiatan">Nama Kegiatan:</label>
-        <input type="text" name="nama_kegiatan" id="nama_kegiatan" required>
-        <br>
-        <label for="telepon">Nomor Telepon:</label>
-        <input type="tel" name="telepon" id="telepon" required>
-        <br>
-        <label for="jenis_talent">Jenis Talent:</label>
-        <select name="jenis_talent" id="jenis_talent" required>
-            <option value="penari_tradisional">Penari Tradisional</option>
-            <option value="penari_modern">Penari Modern/Kontemporer</option>
-            <option value="penari_kreasi">Penari Kreasi Baru</option>
-            <option value="koreografer">Koreografer</option>
-            <option value="pelatih_tari">Pelatih Tari</option>
-            <option value="mc">Master of Ceremony (MC)</option>
-            <option value="penyanyi">Penyanyi</option>
-            <option value="model">Model</option>
-            <option value="tim_produksi">Tim Produksi Acara</option>
-            <option value="makeup_artist">Makeup Artist</option>
-        </select>        
-        <br>
-        <label for="jumlah_talent">Jumlah Talent:</label>
-        <input type="number" name="jumlah_talent" id="jumlah_talent" min="1" required>
-        <br>
-        <label for="tanggal_acara">Tanggal Acara:</label>
-        <input type="date" name="tanggal_acara" id="tanggal_acara" required>
-        <br>
-        <label for="waktu_acara">Waktu Acara:</label>
-        <input type="time" name="waktu_acara" id="waktu_acara" required>
-        <br>
-        <label for="lokasi">Lokasi Acara:</label>
-        <input type="text" name="lokasi" id="lokasi" required>
-        <br>
-        <label for="durasi">Durasi Penampilan (jam):</label>
-        <input type="number" name="durasi" id="durasi" min="1" required>
-        <br>
-        <label for="deskripsi">Deskripsi Kebutuhan:</label>
-        <textarea name="deskripsi" id="deskripsi" rows="4" cols="50" placeholder="Jelaskan detail kebutuhan talent, konsep acara, dll."></textarea>
-        <br>
-        <label for="budget">Budget (Rp):</label>
-        <input type="number" name="budget" id="budget" min="0" step="100000" placeholder="Masukkan budget dalam Rupiah">
-        <br>
-        <input type="submit" value="Kirim">
-        <input type="reset" value="Reset">
-        <br>
+        <h3>Form Penggunaan Talent</h3>
+        
+        <div class="form-row">
+            <label for="nama_client">Nama Client:</label>
+            <input type="text" name="nama_client" id="nama_client" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="nama_kegiatan">Nama Kegiatan:</label>
+            <input type="text" name="nama_kegiatan" id="nama_kegiatan" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" name="telepon" id="telepon" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="jenis_talent">Jenis Talent:</label>
+            <select name="jenis_talent" id="jenis_talent" required>
+                <option value="" disabled selected>-- Pilih jenis talent --</option>
+                <option value="penari_tradisional">Penari Tradisional</option>
+                <option value="penari_modern">Penari Modern/Kontemporer</option>
+                <option value="penari_kreasi">Penari Kreasi Baru</option>
+                <option value="koreografer">Koreografer</option>
+                <option value="pelatih_tari">Pelatih Tari</option>
+                <option value="mc">Master of Ceremony (MC)</option>
+                <option value="penyanyi">Penyanyi</option>
+                <option value="model">Model</option>
+                <option value="tim_produksi">Tim Produksi Acara</option>
+                <option value="makeup_artist">Makeup Artist</option>
+            </select>        
+        </div>
+        
+        <div class="form-row">
+            <label for="jumlah_talent">Jumlah Talent:</label>
+            <input type="number" name="jumlah_talent" id="jumlah_talent" min="1" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="tanggal_acara">Tanggal Acara:</label>
+            <input type="date" name="tanggal_acara" id="tanggal_acara" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="waktu_acara">Waktu Acara:</label>
+            <input type="time" name="waktu_acara" id="waktu_acara" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="lokasi">Lokasi Acara:</label>
+            <input type="text" name="lokasi" id="lokasi" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="durasi">Durasi (jam):</label>
+            <input type="number" name="durasi" id="durasi" min="1" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="deskripsi">Deskripsi:</label>
+            <textarea name="deskripsi" id="deskripsi" rows="3" placeholder="Detail kebutuhan talent, konsep acara, dll."></textarea>
+        </div>
+        
+        <div class="form-row">
+            <label for="budget">Budget (Rp):</label>
+            <input type="number" name="budget" id="budget" min="0" step="100000">
+        </div>
+        
+        <div class="button-group">
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset">
+        </div>
+        
         <a href="halaman1.html">Kembali ke Halaman Utama</a>
     </form>
 </body>

@@ -5,22 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Penyewaan</title>
+    <style>
+        body {
+            background-color: #ff0000; /* Background merah */
+            font-family: Arial, Helvetica, sans-serif; /* Font standar */
+            padding: 20px;
+        }
+        
+        form {
+            background-color: white;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+        
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        
+        input, select {
+            width: 250px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            padding: 8px 15px;
+            margin-right: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        a {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: blue;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h3>Form Penyewaan</h3>
     <form name="form_penyewaan" action="#" method="post">
+        <h3>Form Penyewaan</h3>
+        
         <label for="nama">Nama Penyewa:</label>
         <input type="text" name="nama" id="nama" required>
         <br>
+        
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" required>
         <br>
+        
         <label for="nama_kegiatan">Nama Kegiatan:</label>
         <input type="text" name="nama_kegiatan" id="nama_kegiatan" required>
         <br>
+        
         <label for="telepon">Nomor Telepon:</label>
         <input type="tel" name="telepon" id="telepon" required>
         <br>
+        
         <label for="item">Pilih Item:</label>
         <select name="item" id="item" required>
             <option value="kostum_tradisional">Kostum Tari Tradisional</option>
@@ -35,15 +91,19 @@
             <option value="selendang_bali">Sewa Selendang Bali</option>
         </select>        
         <br>
+        
         <label for="tanggal">Tanggal Penyewaan:</label>
         <input type="date" name="tanggal" id="tanggal" required>
         <br>
+        
         <label for="durasi">Durasi Penyewaan (hari):</label>
         <input type="number" name="durasi" id="durasi" min="1" required>
         <br>
+        
         <input type="submit" value="Kirim">
         <input type="reset" value="Reset">
         <br>
+        
         <a href="halaman1.html">Kembali ke Halaman Utama</a>
     </form>
 </body>

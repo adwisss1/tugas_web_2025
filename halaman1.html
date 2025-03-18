@@ -1,71 +1,165 @@
-<!-- Halaman utama website-->
+<!-- Halaman utama-->
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Website Sanggar Birama</title>
+    <style>
+        body {
+            background-color: #ff0000; 
+            font-family: Arial;
+            padding: 20px;
+            color: black;
+        }
+        
+        .content {
+            background-color: white;
+            padding: 20px;
+            max-width: 600px; 
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 22px; 
+        }
+        
+        h2 {
+            margin-top: 20px; 
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            font-size: 18px; 
+        }
+        
+        p {
+            font-size: 14px; 
+            line-height: 1.4;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%; 
+            margin: 10px 0;
+            font-size: 13px; 
+        }
+        
+        table, th, td {
+            border: 1px solid black;
+        }
+        
+        th, td {
+            padding: 5px; 
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        td:first-child, th:first-child {
+            width: 30px;
+            text-align: center;
+        }
+        
+        td:last-child, th:last-child {
+            width: 35%;
+        }
+        
+        a {
+            display: inline-block;
+            margin: 3px 0;
+            padding: 6px 12px;
+            background-color: #f2f2f2;
+            color: black;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            font-size: 13px; 
+        }
+        
+        a:hover {
+            background-color: #ddd;
+        }
+        
+        .intro {
+            background-color: #f9f9f9;
+            padding: 10px; 
+            border-left: 3px solid #333;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Selamat Datang di Website Sanggar Birama</h1>
-    <p>Birama adalah sanggar seni yang menyediakan berbagai talent di bidang gerak tari dan dance, serta menyewakan alat dan kostum.</p>
-    
-    <h2>Talent yang Tersedia</h2>
-    <table border="1" width="70%">
-        <tr>
-            <th>No</th>
-            <th>Jenis Talent</th>
-            <th>Keterangan</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Tari Tradisional</td>
-            <td>Pertunjukan tari khas daerah</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Modern Dance</td>
-            <td>Koreografi untuk event dan kompetisi</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Balet</td>
-            <td>Penampilan balet klasik dan kontemporer</td>
-        </tr>
-    </table>
-    
-    <h2>Alat dan Kostum yang Disewakan</h2>
-    <table border="1" width="70%">
-        <tr>
-            <th>No</th>
-            <th>Nama Item</th>
-            <th>Harga Sewa</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Kostum Tari Tradisional</td>
-            <td>Rp 300.000/hari</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Kostum Modern Dance</td>
-            <td>Rp 250.000/hari</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Properti Tari (Payung, Selendang, dll)</td>
-            <td>Rp 50.000/hari</td>
-        </tr>
-    </table>
+    <div class="content">
+        <h1>Selamat Datang di Website Sanggar Birama</h1>
+        
+        <div class="intro">
+            <h2>Tentang Sanggar Birama</h2>
+            <p>Sanggar Birama adalah sebutan untuk divisi gerak dalam Unit Kegiatan Mahasiswa (UKMU) Seni dan Budaya Universitas Mataram, yang memiliki dua fokus yaitu gerak Tradisional dan gerak Modern. Dengan tujuan melestarikan dan mengembangkan seni tari tradisional maupun modern di Indonesia.</p>
+            <p>Birama menyediakan berbagai talent di bidang gerak tari dan dance, serta menyewakan alat dan kostum untuk berbagai kebutuhan pertunjukan dan event.</p>
+        </div>
+        
+        <h2>Talent yang Tersedia</h2>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Jenis Talent</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Tari Tradisional</td>
+                <td>Pertunjukan tari khas daerah</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Modern Dance</td>
+                <td>Koreografi untuk event</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Balet</td>
+                <td>Penampilan balet klasik</td>
+            </tr>
+        </table>
+        
+        <h2>Alat dan Kostum yang Disewakan</h2>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Nama Item</th>
+                <th>Harga Sewa</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kostum Tari Tradisional</td>
+                <td>Rp 300.000/hari</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kostum Modern Dance</td>
+                <td>Rp 250.000/hari</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Properti Tari</td>
+                <td>Rp 50.000/hari</td>
+            </tr>
+        </table>
 
-    <h2>Portofolio Sanggar Birama</h2>
-    <p>Lihat karya dan penampilan terbaik dari Sanggar Birama:</p>
-    <a href="portofolio.html">Lihat Portofolio</a>
+        <h2>Portofolio dan Layanan</h2>
+        <p>Lihat karya dan penampilan terbaik dari Sanggar Birama:</p>
+        <a href="portofolio.html">Lihat Portofolio</a>
 
-    <p>Ingin menyewa alat atau kostum? Isi formulir di bawah ini:</p>
-    <a href="halaman2.html">Formulir Penyewaan</a>
+        <p>Ingin menyewa alat atau kostum? Isi formulir di bawah ini:</p>
+        <a href="halaman2.html">Formulir Penyewaan Alat & Kostum</a>
 
-    <p>berminat menggunakan talent kami untuk acara anda? silahkan isi formulir Berikut:</p>
-    <a href="halaman3.html">Formulir Penyewaan</a>
+        <p>Berminat menggunakan talent kami untuk acara Anda?</p>
+        <a href=halaman3.html">Formulir Penyewaan Talent</a>
+    </div>
 </body>
 </html>
